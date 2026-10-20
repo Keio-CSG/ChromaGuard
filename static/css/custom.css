@@ -1,0 +1,86 @@
+/* ChromaGuard project page – additions on top of the Academic Project Page Template */
+
+.venue-badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.2rem 0.9rem;
+  border-radius: 999px;
+  background: var(--background-accent);
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.figure-block { margin: 1.5rem 0 0.5rem; }
+.figure-block img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  background: #fff;
+}
+.figure-caption {
+  margin-top: 0.75rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  text-align: left;
+}
+
+/* Key findings */
+.findings { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1.25rem; }
+.finding-card {
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1.25rem;
+  text-align: left;
+}
+.finding-card .num { font-size: 2rem; font-weight: 800; line-height: 1.1; color: var(--primary-color); }
+.finding-card.warn .num { color: #dc2626; }
+.finding-card.ok .num { color: #16a34a; }
+.finding-card h3 { font-size: 1.05rem; font-weight: 700; margin: 0.4rem 0; color: var(--text-primary); }
+.finding-card p { font-size: 0.92rem; color: var(--text-secondary); margin: 0; }
+@media (max-width: 768px) { .findings { grid-template-columns: 1fr; } }
+
+/* Result tables */
+.table-wrap { overflow-x: auto; margin: 1.25rem 0 0.5rem; }
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  background: var(--background-primary);
+}
+.result-table th, .result-table td {
+  padding: 0.45rem 0.6rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+.result-table thead th { border-bottom: 2px solid var(--text-primary); font-weight: 700; }
+.result-table tbody tr.group-start td { border-top: 2px solid var(--border-color); }
+.result-table td.left, .result-table th.left { text-align: left; }
+.result-table tr.ours td { background: #ecfdf5; }
+.result-table td.na { color: var(--text-light); }
+.result-table .best { font-weight: 700; }
+.result-table .sub { color: var(--text-light); font-size: 0.82em; }
+
+/* Demo video placeholders */
+.video-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 1.25rem; }
+.video-grid figure { margin: 0; }
+.video-grid video { width: 100%; border-radius: var(--border-radius); box-shadow: var(--shadow-md); }
+.video-grid figcaption { margin-top: 0.4rem; font-size: 0.92rem; color: var(--text-secondary); }
+.video-placeholder {
+  aspect-ratio: 16 / 9;
+  border: 2px dashed var(--border-color);
+  border-radius: var(--border-radius);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-light); font-size: 0.95rem; background: var(--background-secondary);
+}
+@media (max-width: 768px) { .video-grid { grid-template-columns: 1fr; } }
+
+.pair-images { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+.pair-images img { width: 100%; border-radius: var(--border-radius); }
+.pair-images figcaption { text-align: center; font-size: 0.9rem; color: var(--text-secondary); }
+
+.section-lead { color: var(--text-secondary); text-align: left; }
+.result-table td[rowspan] { vertical-align: middle; }

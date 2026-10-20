@@ -3,475 +3,409 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="title" content="Lights, Camera, Malfunction: When Illumination Robustness Leaves VLA Models Blind to Color">
+  <meta name="description" content="FLARE optimizes physical spotlight attacks that break VLA robot policies; ChromaGuard is a hue-preserving adversarial training method that restores robustness without losing color perception.">
+  <meta name="keywords" content="Vision-Language-Action, VLA, adversarial robustness, illumination attack, spotlight attack, data augmentation, robot manipulation, SmolVLA, CoRL 2026">
+  <meta name="author" content="Marino Watanabe, Takami Sato, Kentaro Yoshioka">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
+
+  <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="og:site_name" content="Keio University CSG">
+  <meta property="og:title" content="Lights, Camera, Malfunction: When Illumination Robustness Leaves VLA Models Blind to Color">
+  <meta property="og:description" content="FLARE optimizes physical spotlight attacks that break VLA robot policies; ChromaGuard is a hue-preserving adversarial training method that restores robustness without losing color perception.">
+  <meta property="og:url" content="https://keio-csg.github.io/ChromaGuard/">
+  <meta property="og:image" content="https://keio-csg.github.io/ChromaGuard/static/images/fig1.jpg">
+  <meta property="og:image:alt" content="FLARE attack and ChromaGuard defense overview">
+  <meta property="article:author" content="Marino Watanabe">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:title" content="Lights, Camera, Malfunction: When Illumination Robustness Leaves VLA Models Blind to Color">
+  <meta name="twitter:description" content="FLARE spotlight attacks break VLA policies; ChromaGuard restores robustness while keeping color perception.">
+  <meta name="twitter:image" content="https://keio-csg.github.io/ChromaGuard/static/images/fig1.jpg">
 
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
+  <!-- Academic -->
+  <meta name="citation_title" content="Lights, Camera, Malfunction: When Illumination Robustness Leaves VLA Models Blind to Color">
+  <meta name="citation_author" content="Watanabe, Marino">
+  <meta name="citation_author" content="Sato, Takami">
+  <meta name="citation_author" content="Yoshioka, Kentaro">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="Conference on Robot Learning (CoRL)">
+
   <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
+  <title>ChromaGuard | Lights, Camera, Malfunction (CoRL 2026)</title>
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
+  <link rel="icon" type="image/x-icon" href="static/images/csg-favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/csg-favicon.ico">
+
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="stylesheet" href="static/css/custom.css">
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
   <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
-  <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
+
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "Lights, Camera, Malfunction: When Illumination Robustness Leaves VLA Models Blind to Color",
     "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
+      {"@type": "Person", "name": "Marino Watanabe", "affiliation": {"@type": "Organization", "name": "Keio University"}},
+      {"@type": "Person", "name": "Takami Sato", "affiliation": {"@type": "Organization", "name": "Keio University"}},
+      {"@type": "Person", "name": "Kentaro Yoshioka", "affiliation": {"@type": "Organization", "name": "Keio University"}}
     ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
-    "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
+    "datePublished": "2026",
+    "publisher": {"@type": "Organization", "name": "Conference on Robot Learning (CoRL)"},
+    "url": "https://keio-csg.github.io/ChromaGuard/",
+    "image": "https://keio-csg.github.io/ChromaGuard/static/images/fig1.jpg",
+    "keywords": ["Vision-Language-Action", "Adversarial Robustness", "Illumination Attack", "Data Augmentation"]
   }
   </script>
 </head>
 <body>
 
-
-  <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <main id="main-content">
+
+  <!-- ================= Title ================= -->
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Lights, Camera, Malfunction: When Illumination Robustness Leaves VLA Models Blind to Color</h1>
+
             <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+              <!-- TODO: add personal page links, e.g. <a href="https://..." target="_blank">Marino Watanabe</a> -->
+              <span class="author-block">Marino Watanabe,</span>
+              <span class="author-block">Takami Sato,</span>
+              <span class="author-block">Kentaro Yoshioka</span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Keio University</span><br>
+              <span class="venue-badge">CoRL 2026</span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2607.14698" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                    <span>Paper</span>
                   </a>
                 </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                  <a href="https://arxiv.org/abs/2607.14698" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="ai ai-arxiv"></i></span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+  <!-- ================= Video ================= -->
+  <section class="hero teaser">
+    <!-- Demo video referenced in the paper -->
+    <div class="container is-max-desktop">
+            <div class="figure-block">
+        <video controls muted playsinline preload="metadata" poster="static/images/video_poster.jpg" style="width:100%;border-radius:var(--border-radius);box-shadow:var(--shadow-md);">
+          <source src="static/videos/corl_video.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
-  </div>
-</section>
-<!-- End teaser video -->
+  </section>
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+  <!-- ================= Teaser ================= -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="figure-block">
+          <img src="static/images/fig1.jpg" alt="Overview of the FLARE spotlight attack and the ChromaGuard defense">
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
+        <h2 class="subtitle has-text-centered" style="margin-top:1rem;">
+          A single, well-placed spotlight drives SmolVLA to <b>0% task success</b>.
+          Naive color augmentation seems to fix it, but the robot becomes <b>color-blind</b>.
+          <b>ChromaGuard</b> keeps the robot robust <i>and</i> color-aware.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+  </section>
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+  <!-- ================= Abstract ================= -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Vision-Language-Action (VLA) models have emerged as a powerful paradigm for general-purpose robot manipulation; however, their transition to real-world environments reveals vulnerabilities to minor environmental perturbations. We propose <b>FLARE</b>, an optimization framework that exploits these vulnerabilities via targeted illuminations, causing critical disruption of baseline tasks. While adversarial training is the standard countermeasure, we identify a critical and previously underestimated defensive pitfall: naive data augmentations condition VLA models to largely discard color as noise, biasing their visual perception toward shape cues. We expose this degradation through a diagnostic grayscale evaluation, in which a naively defended model maintains high success rates on grayscale inputs, while its success rate on benign, color-dependent real-world tasks drops to at most 48.8%, compared with 78.8% for the undefended SmolVLA baseline.
+            </p>
+            <p>
+              To address this, we propose <b>ChromaGuard</b>, a chroma-preserving adversarial training method. On a physical 6-DoF robotic platform using SmolVLA, we demonstrate that ChromaGuard achieves 95.0% and 88.8% success rates in benign and attacked color-dependent tasks, respectively.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
+  </section>
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+  <!-- ================= Key findings ================= -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Key Findings</h2>
+      <div class="findings">
+        <div class="finding-card warn">
+          <div class="num">0%</div>
+          <h3>Spotlights break VLAs</h3>
+          <p>FLARE's optimized spotlight drops SmolVLA's success rate to 0% on all three LIBERO suites, with trajectory deviations of up to 115.5&nbsp;cm.</p>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
+        <div class="finding-card warn">
+          <div class="num">90.5%</div>
+          <h3>Naive defense goes color-blind</h3>
+          <p>A naively augmented model keeps 90.5% success on <i>grayscale</i> inputs, but drops to 48.8% on real color-dependent tasks.</p>
         </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
+        <div class="finding-card ok">
+          <div class="num">95.0%</div>
+          <h3>ChromaGuard is robust and color-aware</h3>
+          <p>Keeping hue fixed during augmentation gives 95.0% (benign) and 88.8% (attacked) success on the real color-dependent task.</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
       </div>
     </div>
   </section>
-<!--End paper poster -->
 
+  <!-- ================= Method ================= -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Method</h2>
 
+      <h3 class="title is-4">FLARE: Optimized Physical Spotlight Attack</h3>
+      <div class="content has-text-justified">
+        <p>
+          FLARE (<b>F</b>ramework for <b>L</b>ighting <b>A</b>dversarial <b>R</b>obustness <b>E</b>valuation) assumes a strict black-box adversary who can only place a spotlight in the workspace. The robot, camera, and objects are never touched. The spotlight is parameterized by its hue, saturation, value, intensity, height, and cutoff angle,
+          &theta; = [h, s, v, I, z, &alpha;].
+          FLARE scores each configuration by how far the attacked end-effector trajectory deviates from the benign one, plus a task-failure term. It then searches the parameter space with Bayesian Optimization (Optuna, TPE sampler), evaluating alternating task subsets to find universal worst-case lighting.
+        </p>
+      </div>
+      <div class="figure-block">
+        <img src="static/images/fig2.jpg" alt="Overview of the FLARE framework" loading="lazy">
+        <p class="figure-caption">Overview of FLARE. Bayesian Optimization samples worst-case physical spotlight parameters and evaluates VLA robustness based on trajectory deviations and task failure rates.</p>
+      </div>
 
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
+      <h3 class="title is-4" style="margin-top:2.5rem;">ChromaGuard: Hue-Preserving Adversarial Training</h3>
+      <div class="content has-text-justified">
+        <p>
+          A typical defense (<i>Naive-Aug</i>) randomly jitters hue, saturation, brightness, contrast, and sharpness. Unconstrained hue shifts change the intrinsic color of objects, so the model learns to treat color as noise. <b>ChromaGuard</b> isolates illumination effects. It keeps wide perturbations on saturation, brightness, contrast, and sharpness, but <b>fixes the hue perturbation to zero</b>. Training minimizes the loss under the worst illumination inside this constrained space, which we approximate in practice by uniform random sampling over broad bounds.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Simulation results ================= -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Simulation: Spotlights Break VLA Models</h2>
+      <div class="content has-text-justified">
+        <p>
+          We train SmolVLA on LIBERO and evaluate 500 episodes per suite, with shadows and reflections enabled in MuJoCo. The optimized spotlight drives the Baseline to <b>0% success</b> on every suite. Naive augmentation appears to restore robustness. The real-world experiments below show that this resilience is deceptive.
+        </p>
+      </div>
+      <div class="table-wrap">
+        <table class="result-table">
+          <thead>
+            <tr>
+              <th class="left">Task Suite</th><th>Model</th><th>Attack</th><th>SR (%)</th><th>TE-Avg (cm)</th><th>TE-Max<sub>avg</sub> (cm)</th><th>TE-Max (cm)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="group-start"><td class="left" rowspan="6">LIBERO-Spatial</td><td rowspan="3">Baseline</td><td>Benign</td><td>81.2</td><td class="na">–</td><td class="na">–</td><td class="na">–</td></tr>
+            <tr><td>Random</td><td>15.4</td><td>12.0</td><td>21.7</td><td>37.6</td></tr>
+            <tr><td>Optimized</td><td class="best">0.0</td><td>22.3</td><td>50.5</td><td>67.6</td></tr>
+            <tr><td rowspan="3">Naive-Aug</td><td>Benign</td><td>79.4</td><td class="na">–</td><td class="na">–</td><td class="na">–</td></tr>
+            <tr><td>Random</td><td>77.4</td><td>4.3</td><td>16.9</td><td>33.1</td></tr>
+            <tr><td>Optimized</td><td>78.8</td><td>4.2</td><td>17.8</td><td>40.3</td></tr>
+
+            <tr class="group-start"><td class="left" rowspan="6">LIBERO-Object</td><td rowspan="3">Baseline</td><td>Benign</td><td>89.4</td><td class="na">–</td><td class="na">–</td><td class="na">–</td></tr>
+            <tr><td>Random</td><td>7.8</td><td>18.3</td><td>44.6</td><td>54.7</td></tr>
+            <tr><td>Optimized</td><td class="best">0.0</td><td>29.1</td><td>75.2</td><td>88.3</td></tr>
+            <tr><td rowspan="3">Naive-Aug</td><td>Benign</td><td>89.8</td><td class="na">–</td><td class="na">–</td><td class="na">–</td></tr>
+            <tr><td>Random</td><td>91.6</td><td>7.9</td><td>29.3</td><td>56.0</td></tr>
+            <tr><td>Optimized</td><td>93.2</td><td>5.0</td><td>19.6</td><td>41.8</td></tr>
+
+            <tr class="group-start"><td class="left" rowspan="6">LIBERO-10</td><td rowspan="3">Baseline</td><td>Benign</td><td>58.4</td><td class="na">–</td><td class="na">–</td><td class="na">–</td></tr>
+            <tr><td>Random</td><td>22.4</td><td>18.5</td><td>37.0</td><td>61.6</td></tr>
+            <tr><td>Optimized</td><td class="best">0.0</td><td>36.3</td><td>83.8</td><td class="best">115.5</td></tr>
+            <tr><td rowspan="3">Naive-Aug</td><td>Benign</td><td>50.2</td><td class="na">–</td><td class="na">–</td><td class="na">–</td></tr>
+            <tr><td>Random</td><td>49.2</td><td>9.0</td><td>39.0</td><td>61.5</td></tr>
+            <tr><td>Optimized</td><td>47.2</td><td>9.0</td><td>40.3</td><td>64.0</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="figure-caption">FLARE spotlight attack across three LIBERO suites. SR: task success rate. TE: trajectory error between benign and attacked end-effector paths, computed over episodes where the Baseline succeeds but fails under attack.</p>
+    </div>
+  </section>
+
+  <!-- ================= Grayscale diagnostic ================= -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Diagnosis: Naive Augmentation Ignores Color</h2>
+      <div class="columns is-vcentered">
+        <div class="column is-6">
+          <div class="content has-text-justified">
+            <p>
+              We convert input images to <b>grayscale</b> at inference time. The Baseline, which relies on color, collapses to near zero. The Naive-Aug model performs almost identically on grayscale and RGB inputs (e.g., <b>90.5% vs. 89.8%</b> on LIBERO-Object).
+            </p>
+            <p>
+              Naive augmentation does not learn robust color representations. It avoids the illumination problem by <b>dropping color altogether</b>, which leaves the model biased toward shape and position.
+            </p>
+          </div>
+        </div>
+        <div class="column is-6">
+          <div class="table-wrap">
+            <table class="result-table">
+              <thead>
+                <tr><th class="left">Task Suite</th><th>Model</th><th>RGB SR (%)</th><th>Grayscale SR (%)</th></tr>
+              </thead>
+              <tbody>
+                <tr class="group-start"><td class="left" rowspan="2">LIBERO-Spatial</td><td>Baseline</td><td>81.2</td><td>0.0</td></tr>
+                <tr><td>Naive-Aug</td><td>79.4</td><td class="best">80.1</td></tr>
+                <tr class="group-start"><td class="left" rowspan="2">LIBERO-Object</td><td>Baseline</td><td>89.4</td><td>10.0</td></tr>
+                <tr><td>Naive-Aug</td><td>89.8</td><td class="best">90.5</td></tr>
+                <tr class="group-start"><td class="left" rowspan="2">LIBERO-10</td><td>Baseline</td><td>58.4</td><td>0.0</td></tr>
+                <tr><td>Naive-Aug</td><td>50.2</td><td class="best">47.8</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Real world ================= -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Real-World Evaluation</h2>
+      <div class="content has-text-justified">
+        <p>
+          We deploy SmolVLA and &pi;<sub>0.5</sub> on a 6-DoF SO-101 Arm Pro with a wrist camera and a third-person camera, with auto-exposure and auto-white-balance enabled. A programmable RGB spotlight sits outside the camera's view. We use two tasks. In the <b>color-invariant</b> task, the robot picks up a red ball and places it in a bin. In the <b>color-dependent</b> task, it must pick the red or the blue ball, which are otherwise identical, according to the instruction.
+        </p>
+      </div>
+      <div class="figure-block">
+        <img src="static/images/setup.jpg" alt="Real-world experimental setup" loading="lazy">
+        <p class="figure-caption">(i) Physical workspace with a 6-DoF arm, dual cameras, and an adjustable spotlight. (ii) Third-person and wrist camera inputs under benign and attacked illumination. (iii) Color-invariant and color-dependent task configurations.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="result-table">
+          <thead>
+            <tr>
+              <th class="left" rowspan="2">Base Model</th><th rowspan="2">Model</th>
+              <th colspan="2">Color-Invariant Task SR (%)</th>
+              <th colspan="2">Color-Dependent Task SR (%)</th>
+            </tr>
+            <tr><th>Benign</th><th>Attack</th><th>Benign</th><th>Attack</th></tr>
+          </thead>
+          <tbody>
+            <tr class="group-start"><td class="left" rowspan="3">SmolVLA</td><td>Baseline</td><td>67.5±15.5</td><td>0.0+8.8</td><td>78.8±10.2 <span class="sub">(11.8)</span></td><td>21.3±10.2 <span class="sub">(22.2)</span></td></tr>
+            <tr><td>Naive-Aug</td><td>77.5±15.0</td><td class="best">67.5±15.5</td><td>48.8±10.8 <span class="sub">(90.2)</span></td><td>37.5±11.0 <span class="sub">(80.0)</span></td></tr>
+            <tr class="ours"><td><b>ChromaGuard (Ours)</b></td><td class="best">85.0±14.1</td><td class="best">67.5±15.5</td><td class="best">95.0±7.2 <span class="sub">(0)</span></td><td class="best">88.8±8.8 <span class="sub">(22.2)</span></td></tr>
+
+            <tr class="group-start"><td class="left" rowspan="3">&pi;<sub>0.5</sub></td><td>Baseline</td><td>77.5±15.0</td><td>25.0±15.2</td><td>47.5±10.8 <span class="sub">(83.3)</span></td><td>18.8±9.9 <span class="sub">(35.4)</span></td></tr>
+            <tr><td>Naive-Aug</td><td>77.5±15.0</td><td class="best">77.5±15.0</td><td>40.0±11.0 <span class="sub">(79.2)</span></td><td>47.5±10.8 <span class="sub">(88.1)</span></td></tr>
+            <tr class="ours"><td><b>ChromaGuard (Ours)</b></td><td class="best">80.0±14.8</td><td class="best">77.5±15.0</td><td class="best">51.3±10.8 <span class="sub">(100)</span></td><td class="best">55.0±10.9 <span class="sub">(91.7)</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="figure-caption">Real-world success rates (40 trials for color-invariant, 80 trials for color-dependent). Numbers in parentheses: percentage of failures caused by grasping the wrongly colored object. ± denotes the larger margin of the 95% Wilson score interval.</p>
+
+      <div class="content has-text-justified" style="margin-top:1.5rem;">
+        <p>
+          In the color-invariant task, ChromaGuard is as robust as Naive-Aug. Under attack, success rises from 0% to 67.5% for SmolVLA and from 25.0% to 77.5% for &pi;<sub>0.5</sub>. In the color-dependent task, Naive-Aug drops to 48.8% <i>even under benign lighting</i>, and 90.2% of its failures come from picking the wrong color. ChromaGuard keeps color discrimination intact: SmolVLA reaches <b>95.0%</b> benign and <b>88.8%</b> attacked success.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Ablation ================= -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Ablation Studies</h2>
+      <div class="columns">
+        <div class="column is-6">
+          <h3 class="title is-5">Similar hues: red vs. pink</h3>
+          <div class="pair-images">
+            <figure><img src="static/images/setup_pink_benign.jpg" alt="Red vs pink task, benign" loading="lazy"><figcaption>Benign</figcaption></figure>
+            <figure><img src="static/images/setup_pink_attack.jpg" alt="Red vs pink task, attacked" loading="lazy"><figcaption>Attacked</figcaption></figure>
+          </div>
+          <div class="table-wrap">
+            <table class="result-table">
+              <thead><tr><th class="left">Setting</th><th>Benign SR (%)</th><th>Attacked SR (%)</th></tr></thead>
+              <tbody>
+                <tr><td class="left">Baseline</td><td>65.0 <span class="sub">(92.9)</span></td><td>20.0 <span class="sub">(37.5)</span></td></tr>
+                <tr><td class="left">Naive-Aug</td><td>50.0 <span class="sub">(75.0)</span></td><td>37.5 <span class="sub">(76.0)</span></td></tr>
+                <tr class="ours"><td class="left"><b>Ours</b></td><td class="best">82.5 <span class="sub">(42.9)</span></td><td class="best">72.5 <span class="sub">(100)</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="figure-caption">Red and pink differ mainly in saturation and value, both of which ChromaGuard perturbs. ChromaGuard still distinguishes them best (SmolVLA, 40 trials).</p>
+        </div>
+        <div class="column is-6">
+          <h3 class="title is-5">Which properties to perturb?</h3>
+          <div class="table-wrap">
+            <table class="result-table">
+              <thead><tr><th class="left">Setting</th><th>Benign SR (%)</th><th>Attacked SR (%)</th></tr></thead>
+              <tbody>
+                <tr><td class="left">Fix H + V</td><td>67.5 <span class="sub">(0)</span></td><td>60.0 <span class="sub">(37.5)</span></td></tr>
+                <tr><td class="left">Fix H + Sharpness</td><td class="best">97.5 <span class="sub">(0)</span></td><td>62.5 <span class="sub">(20.0)</span></td></tr>
+                <tr><td class="left">Fix H + Contrast</td><td>90.0 <span class="sub">(0)</span></td><td>75.0 <span class="sub">(20.0)</span></td></tr>
+                <tr><td class="left">Fix H + Saturation</td><td>92.5 <span class="sub">(0)</span></td><td>87.5 <span class="sub">(20.0)</span></td></tr>
+                <tr><td class="left">Narrow range</td><td>82.5 <span class="sub">(0)</span></td><td>45.0 <span class="sub">(36.4)</span></td></tr>
+                <tr class="ours"><td class="left"><b>Ours</b></td><td>95.0 <span class="sub">(0)</span></td><td class="best">88.8 <span class="sub">(22.2)</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="figure-caption">Color-dependent task, SmolVLA. Fixing hue alone is enough to keep color discrimination: no variant grasps a wrongly colored object under benign lighting. Wide perturbations on the other properties are what provide robustness against the spotlight.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BibTeX ================= -->
+  <!-- TODO: update with the official citation once proceedings (PMLR) are published -->
+  <section class="section hero is-light" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
         <h2 class="title">BibTeX</h2>
@@ -480,41 +414,34 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <pre id="bibtex-code"><code>@inproceedings{watanabe2026lights,
+  title     = {Lights, Camera, Malfunction: When Illumination Robustness Leaves VLA Models Blind to Color},
+  author    = {Watanabe, Marino and Sato, Takami and Yoshioka, Kentaro},
+  booktitle = {Conference on Robot Learning (CoRL)},
+  year      = {2026}
 }</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
 
+  </main>
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              <b>Acknowledgments.</b> This research was supported in part by JST Next-generation Edge AI Semiconductor JPMJES2515, JST CREST JPMJCR23M4, JST PRESTO JPMJPR22PA, JST ASPIRE JPMJAP2515, and JSPS KAKENHI 24K02940.
+            </p>
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
